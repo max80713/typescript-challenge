@@ -9,7 +9,11 @@
 export function asyncSum(numbers: number[]): Promise<number> {
     return new Promise((resolve, reject) => {
         try {
-            // 請在此處寫下你的程式碼
+            let sum = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                sum = sum + numbers[i];
+            }
+            resolve(sum);
         } catch (error) {
             reject(error);
         }

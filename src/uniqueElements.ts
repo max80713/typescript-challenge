@@ -5,5 +5,11 @@
  * @returns - 回傳包含所有唯一元素的新陣列
  */
 export function uniqueElements(array: number[]): number[] {
-    // 請在此處寫下你的程式碼
+    let result: number[] = [];
+    for (let i = 0; i < array.length; i++) {
+        if (result.indexOf(array[i]) === -1) {
+            result.push(array[i]);
+        }
+    }
+    return result;
 }
