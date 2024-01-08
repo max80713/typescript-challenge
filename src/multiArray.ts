@@ -9,5 +9,9 @@
  */
 
 export function processMultiArray(arr) {
-    // 在此實現函式
+    return arr.map((item) => {
+        return item.map((item) => {
+            return item * 2;
+        });
+    });
 }
